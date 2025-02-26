@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
@@ -25,9 +24,6 @@ function App() {
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
       </div>
       <h1>Vite + React</h1>
       <div className="card">
@@ -35,7 +31,7 @@ function App() {
           count is {count}
         </button>
         <form onSubmit={handleSubmit}>
-          <label className="block text-gray-600 mb-1" htmlFor="email">Email</label>
+          <label className="block text-gray-600 mb-1" htmlFor="email">name</label>
           <input
             type="text"
             id="name"
