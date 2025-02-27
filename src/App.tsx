@@ -1,31 +1,24 @@
 import React, { useState } from 'react'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0);
   const [formData, setFormData] = useState({
-    name:""
+    name: ""
   });
 
-  const handleSubmit = (e:React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     alert(formData.name);
   }
 
-  const handleChange = (e:React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   }
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -45,11 +38,7 @@ function App() {
           </p>
           <button type='submit'>Submit</button>
         </form>
-
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 
